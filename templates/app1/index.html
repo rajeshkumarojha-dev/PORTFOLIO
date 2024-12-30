@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/e944101661.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/css/gradient.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <section class="portfolio">
+      <aside class="left">
+        <div class="logo" data-aos="fade-in" data-aos-delay="500" data-aos-duration="2000">
+          <div class="firstletter"><h1>P</h1></div>
+          <div class="secondletter"><h2>ortfolio</h2></div>
+        </div>
+        <div class="close-navbar">
+          <i class="fa-solid fa-circle-xmark close-nav"></i>
+        </div>
+        <div class="left-img">
+          <img
+            src="/static/images/Rajesh_profile-removebg-preview-modified.png"
+            alt="" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="3000"/>
+          <h6 data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Rajesh Kumar ojha</h6>
+        </div>
+        <div class="left-icon">
+          <div class="icon" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">
+            <div class="social-icon">
+              <h3 class="git tooltip">Github</h3>
+              <a href="https://github.com/rajeshkumarojha-dev"><i class="fa-brands fa-github git"></i></a>
+            </div>
+          </div>
+
+          <div class="icon" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">
+            <div class="social-icon">
+              <h3 class="link tooltip">Linkedin</h3>
+              <a href="https://www.linkedin.com/in/rajesh-kumar-ojha/"><i class="fa-brands fa-linkedin link"></i></a>
+            </div>
+          </div>
+
+          <div class="icon" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="2000">
+            <div class="social-icon">
+              <h3 class="email tooltip">Email</h3>
+              <a href="mailto:rajeshkumarojha.dev@gmail.com"><i class="fa-solid fa-envelope email"></i></a>
+            </div>
+          </div>
+
+          <div class="icon" data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2000">
+            <div class="social-icon">
+              <h3 class="whats tooltip">Whatapp</h3>
+              <a href="https://wa.me/7682014028"><i class="fa-brands fa-whatsapp whats"></i></a>
+            </div>
+          </div>
+
+          <div class="icon">
+            <div class="social-icon" data-aos="fade-up" data-aos-delay="2500" data-aos-duration="2000">
+              <h3 class="face tooltip">Facebook</h3>
+              <a href="https://www.facebook.com/rajeshkumar.ojha.7549/"><i class="fa-brands fa-facebook face"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="menu">
+          <ul data-aos="fade-right" data-aos-delay="3000" data-aos-duration="2000">
+            <li>
+              <a href="{% url "home" %}"><i class="fa-solid fa-house-chimney"></i>Home</a>
+            </li>
+            <li>
+              <a href="{% url "resume" %}"><i class="fa-solid fa-file-code"></i>Resume</a>
+            </li>
+            <!-- <li>
+              <a href=""><i class="fa-solid fa-code"></i>Skills</a>
+            </li> -->
+            <li>
+              <a href="{% url "project" %}"><i class="fa-solid fa-server"></i>Project</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="right">
+      <div class="background">
+        <div class="blob"></div>
+        <div class="container">
+          <div class="home-bg-logo" data-aos="fade" data-aos-delay="3000" data-aos-duration="1500">
+            <img
+              src="/static/images/rk-blue-logo.png"
+              alt=""
+              style="z-index: 2"
+              class="logo-img"
+            />
+          </div>
+          <div class="home-text">
+            <h1 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="2000">Rajesh Kumar</h1>
+            <p data-aos="fade-up" data-aos-delay="2000" data-aos-duration="2500">Python Full-Stack Developer</p>
+            <button class="about-section-btn" data-aos="fade-up" data-aos-delay="3000" data-aos-duration="3000">
+              About Me <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <header>
+          <div class="img-logo" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="1500">
+            <img src="/static/images/rk-blue-logo.png" alt="" />
+          </div>
+          <div class="contact" data-aos="fade-left" data-aos-delay="1500" data-aos-duration="1500">
+            <h5 class="tooltip">Contact</h5>
+            <a href="{% url "contact" %}"><i class="fa-regular fa-paper-plane"></i></a>
+            <!-- <h5 class="tooltip"></h5> -->
+            <div class="menu-icon">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <about-section class="about">
+      <div class="about-container">
+        <div class="bg-watermark">
+          <span>About</span>
+        </div>
+        <div class="aboutme-content">
+          <div class="about-left">
+            <div class="about-text">
+              <div class="about-text-content">
+                <h4>About Me</h4>
+                <p>Full-stack Developer</p>
+                <span class="about-span">
+                  I'm Rajesh Kumar Ojha, 22-years-old. Now i am learning web
+                  development as a Full-stack development.I'm a weird guy who
+                  likes making weird things with web technologies. I like to
+                  resolve design problem & create different type oof
+                  user-friendly interface and imagine useful interaction
+                  devloping rich web experience and web applications.
+                  Technologies and tools that i use to create different awesome
+                  websites.
+                </span>
+                <div class="tools">
+                  <ul class="highlight">
+                    <li><i class="fa-solid fa-hashtag"></i>JavaScript</li>
+                    <li><i class="fa-solid fa-hashtag"></i>React.js</li>
+                    <li><i class="fa-solid fa-hashtag"></i>css</li>
+                    <li><i class="fa-solid fa-hashtag"></i>python</li>
+                    <li><i class="fa-solid fa-hashtag"></i>Django</li>
+                    <li><i class="fa-solid fa-hashtag"></i>git</li>
+                    <li><i class="fa-solid fa-hashtag"></i>MongoDB</li>
+                    <li><i class="fa-solid fa-hashtag"></i>Bootstrap</li>
+                    <li><i class="fa-solid fa-hashtag"></i>SQL</li>
+                    <li><i class="fa-solid fa-hashtag"></i>Figma</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="about-icons">
+                <div class="tool-heading">
+                  <h1>Tools</h1>
+                </div>
+                <div class="close-btn">
+                  <i class="fa-solid fa-circle-xmark close"></i>
+                </div>
+                <div class="tool-showcase">
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="react tool-tips">React</h3>
+                      <i class="fa-brands fa-react react-i"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="js tool-tips">JavaScript</h3>
+                      <i class="fa-brands fa-node-js js"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="py tool-tips">Python</h3>
+                      <i class="fa-brands fa-python py-i"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="git tool-tips">Git</h3>
+                      <i class="fa-brands fa-git-alt git-i"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="boots tool-tips">Bootstrap</h3>
+                      <i class="fa-brands fa-bootstrap boots-i"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="github tool-tips">Github</h3>
+                      <i class="fa-brands fa-github github-i"></i>
+                    </div>
+                  </div>
+
+                  <div class="tool-icon">
+                    <div class="tools-logo-icon">
+                      <h3 class="css tool-tips">CSS</h3>
+                      <i class="fa-brands fa-css3 css-i"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-right">
+            <img src="/static/images/aboutbg2.png" alt="" />
+            <div class="about-btn">
+              <button>
+                <a
+                  href="https://drive.google.com/file/d/1kDxbgqlZSirapvQ79VIlYeakkpC_o1hE/view?usp=sharing"
+                  download
+                  >Download CV</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </about-section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="/static/js/script.js"></script>
+
+  </body>
+</html>
