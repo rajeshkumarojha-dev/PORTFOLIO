@@ -118,3 +118,9 @@
         font-size: 30px;
     }
   }
+
+  @media(max-width: 390px){
+    .techstack{
+      font-size: 28px;
+    }
+  }
